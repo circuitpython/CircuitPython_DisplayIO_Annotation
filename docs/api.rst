@@ -5,5 +5,5 @@
 .. use this format as the module name: "adafruit_foo.foo"
 
 .. automodule:: displayio_annotation
-   :members:
+    :members:
     :member-order: bysource

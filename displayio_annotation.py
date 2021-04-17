@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 """
 
-`annotation`
+`displayio_annotation`
 ================================================================================
 A widget for annotating other widgets or freeform positions.
 
@@ -21,7 +21,7 @@ Implementation Notes
 
 """
 
-# pylint: disable=too-many-arguments, too-many-locals, unused-argument
+# pylint: disable=too-many-arguments, too-many-locals, unused-argument, too-few-public-methods
 
 from terminalio import FONT
 from adafruit_display_text import bitmap_label
@@ -31,7 +31,7 @@ from adafruit_displayio_layout.widgets.widget import Widget
 
 class Annotation(Widget):
     """A widget to be used to annotate other widgets with text and lines, but can also
-     be used freeform by using ``(x,y)`` parameter.
+    be used freeform by using ``(x,y)`` parameter.
 
     :param int x: x-direction pixel position for the end of the annotation line for
      freeform positioning, ``(x,y)`` will be ignored if a ``widget`` and ``anchor_point`` and/or
@@ -93,7 +93,7 @@ class Annotation(Widget):
       annotations (using ``widget`` and ``anchor_point`` input parameters) and a
       freeform annotation (using ``x`` and ``y`` input parameters).
 
-      File location: *examples/displayio_layout_annotation_simpletest.py*
+      File location: *examples/displayio_annotation_simpletest.py*
     """
 
     def __init__(

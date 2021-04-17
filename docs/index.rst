@@ -24,14 +24,11 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    DisplayIO Basics <https://learn.adafruit.com/circuitpython-display-support-using-displayio>
 
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
 
 .. toctree::
     :caption: Other Links

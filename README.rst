@@ -12,8 +12,8 @@ Introduction
     :alt: Discord
 
 
-.. image:: https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/workflows/Build%20CI/badge.svg
-    :target: https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/actions
+.. image:: https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/workflows/Build%20CI/badge.svg
+    :target: https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/actions
     :alt: Build Status
 
 
@@ -72,7 +72,7 @@ Contributing
 ============
 
 Contributions are welcome! Please read our `Code of Conduct
-<https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/blob/main/CODE_OF_CONDUCT.md>`_
+<https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/blob/main/CODE_OF_CONDUCT.md>`_
 before contributing to help this project stay welcoming.
 
 Documentation

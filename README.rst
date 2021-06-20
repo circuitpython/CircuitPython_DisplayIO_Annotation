@@ -12,8 +12,8 @@ Introduction
     :alt: Discord
 
 
-.. image:: https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/workflows/Build%20CI/badge.svg
-    :target: https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/actions
+.. image:: https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/workflows/Build%20CI/badge.svg
+    :target: https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/actions
     :alt: Build Status
 
 
@@ -34,12 +34,14 @@ Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_
 or individual libraries can be installed using
-`circup <https://github.com/adafruit/circup>`_.Installing from PyPI
+`circup <https://github.com/adafruit/circup>`_.
+
+Installing from PyPI
 =====================
 
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
-PyPI <https://pypi.org/project/adafruit-circuitpython-displayio_annotation/>`_.
+PyPI <https://pypi.org/project/circuitpython-displayio_annotation/>`_.
 To install for current user:
 
 .. code-block:: shell
@@ -72,7 +74,7 @@ Contributing
 ============
 
 Contributions are welcome! Please read our `Code of Conduct
-<https://github.com/circuitpython/CircuitPython_DisplayIO_Annotation/blob/main/CODE_OF_CONDUCT.md>`_
+<https://github.com/circuitpython/CircuitPython_Org_DisplayIO_Annotation/blob/main/CODE_OF_CONDUCT.md>`_
 before contributing to help this project stay welcoming.
 
 Documentation

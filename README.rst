@@ -34,12 +34,14 @@ Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_
 or individual libraries can be installed using
-`circup <https://github.com/adafruit/circup>`_.Installing from PyPI
+`circup <https://github.com/adafruit/circup>`_.
+
+Installing from PyPI
 =====================
 
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
-PyPI <https://pypi.org/project/adafruit-circuitpython-displayio_annotation/>`_.
+PyPI <https://pypi.org/project/circuitpython-displayio_annotation/>`_.
 To install for current user:
 
 .. code-block:: shell

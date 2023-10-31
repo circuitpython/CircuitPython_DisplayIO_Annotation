@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# SPDX-FileCopyrightText: 2017 Scott Shawcroft, written for Adafruit Industries
+# SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 #
 # SPDX-License-Identifier: MIT
 
 import os
 import sys
+import datetime
 
 sys.path.insert(0, os.path.abspath(".."))
 
@@ -16,6 +17,7 @@ sys.path.insert(0, os.path.abspath(".."))
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
+    "sphinxcontrib.jquery",
     "sphinx.ext.intersphinx",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
@@ -29,12 +31,9 @@ autodoc_mock_imports = ["terminalio", "vectorio", "bitmaptools"]
 
 
 intersphinx_mapping = {
-    "python": ("https://docs.python.org/3.4", None),
-    "CircuitPython": ("https://circuitpython.readthedocs.io/en/latest/", None),
+    "python": ("https://docs.python.org/3", None),
+    "CircuitPython": ("https://docs.circuitpython.org/en/latest/", None),
 }
-
-# Show the docstring from both the class and its __init__() method.
-autoclass_content = "both"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -63,18 +62,12 @@ release = "1.0"
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = [
-    "_build",
-    "Thumbs.db",
-    ".DS_Store",
-    ".env",
-    "CODE_OF_CONDUCT.md",
-]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".env", "CODE_OF_CONDUCT.md"]
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -101,19 +94,10 @@ napoleon_numpy_docstring = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-on_rtd = os.environ.get("READTHEDOCS", None) == "True"
+import sphinx_rtd_theme
 
-if not on_rtd:  # only import and set the theme if we're building docs locally
-    try:
-        import sphinx_rtd_theme
-
-        html_theme = "sphinx_rtd_theme"
-        html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), "."]
-    except:
-        html_theme = "default"
-        html_theme_path = ["."]
-else:
-    html_theme_path = ["."]
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path(), "."]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -133,12 +117,16 @@ htmlhelp_basename = "CircuitPython_Displayio_annotationLibrarydoc"
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
+    #
     # 'papersize': 'letterpaper',
     # The font size ('10pt', '11pt' or '12pt').
+    #
     # 'pointsize': '10pt',
     # Additional stuff for the LaTeX preamble.
+    #
     # 'preamble': '',
     # Latex figure (float) alignment
+    #
     # 'figure_align': 'htbp',
 }
 
@@ -166,7 +154,7 @@ man_pages = [
         "CircuitPython DisplayIO_Annotation Library Documentation",
         [author],
         1,
-    ),
+    )
 ]
 
 # -- Options for Texinfo output -------------------------------------------

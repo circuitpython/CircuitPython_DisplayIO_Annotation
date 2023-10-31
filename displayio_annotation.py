@@ -114,7 +114,6 @@ class Annotation(Widget):
         text_offset=(0, -1),
         text_under=False,
     ):
-
         if widget:
             if (x is not None) or (y is not None):
                 print(

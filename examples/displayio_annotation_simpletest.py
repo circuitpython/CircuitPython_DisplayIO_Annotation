@@ -66,7 +66,7 @@ my_group.append(switch_annotation_under)
 my_group.append(freeform_annotation)
 
 # Add my_group to the display
-display.show(my_group)
+display.root_group = my_group
 
 # Start the main loop
 while True:
